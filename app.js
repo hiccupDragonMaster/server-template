@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(expressip().getIpInfoMiddleware);
-app.use(require('./utils/error'));
+// app.use(require('./utils/error'));
 
 app.use((req, res, next) => {
   // Website you wish to allow to connect
